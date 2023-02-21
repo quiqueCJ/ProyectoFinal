@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //variables a utilizar
+
+var precio_base = 2000
+var recargo_18años = 0.10
+var recargo_25años = 0.20
+var recargo_50años = 030
+var recargo_18añosCasado = 0.10
+var recargo_25añosCasado = 0.20
+var recargo_50añosCasado = 030
+var recargo_hijos = 0.20
+var recargo_hijosMayora2 = 0.30
+var recargo_incluyendoRecargos = 0
+
+// Variables recargo
+
+var recargo = 0
+var recargo_total = 0
+
+// Precio Final
+var recargo_final = 0
+
+var cotizar = prompt("Quiere hacer una cotizacion,", "si/no")
+while ("SI" == cotizar.toUpperCase())
+{
+  
+  var nombre = prompt("Ingrese su Nombre")
+  var edad = prompt("Ingrese su edad")
+  var edad_numero = parseInt(edad);
+  if(edad>18)
+  { 
+        if(edad>=18 && edad<=24){
+            recargo = precio_base * recargo_18años
+            recargo_total = recargo_total + recargo 
+        }else if(edad>=25 && edad<=49)
+        {
+          recargo = precio_base * recargo_25años
+          recargo_total = recargo_total + recargo
+        } else
+        {
+            recargo = precio_base * recargo_50años
+            recargo_total = recargo_total + recargo
+        }
+        var estado_Civil = prompt("Es usted Casado", "si/no")
+        if ("si" == estado_Civil.toLowerCase())
+        {
+          var edad_Pareja = prompt("Cual es la edad de su Pareja")
+
+        }else
+  {   
+    alert("No elegible por tener menos de 18 años")
+  } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
