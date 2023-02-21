@@ -1,0 +1,16 @@
+Algoritmo
+
+1. Solicitar al asegurando la siguiente informacion su edad, estado civil, si tiene esposa cuantos años tiene la esposa y si tiene hijos cuantos tiene.
+
+2. Tenemos que verificar si el asegurando es mayor o igual a 18 años y si es menor a 18 año indicar que no es eligible.
+
+3. Estableceremos un precio base el cual lo puede fijar el usuario.
+
+4. Vamos a establecer unos recargos extras al precio base, los cargos van a variar dependiendo de la edad del asegurado, para esto vamos a utilizar un estructura de condicionales con el cual aplicaremos cierta recargo dependiendo de la edad. Para esto  multiplicaremos el cargo base por su recargo dependiendo de la edad.
+
+5. Obtener la edad del conyugue del asegurador para aplicar un recargo extra en base al precio base, para esto vamos a verificar si el asegurador tiene conyugue y si tiene vamos a calcular su edad, luego usaremos una estructura de condiciones para aplicar el recargo extra en base al precio base y la edad del conyugue.
+
+6. Calcular si el asegurador tiene hijos y cuantos.  Para esto verificaremos si el asegurador tiene hijos y cuantos hijos tiene, esto lo haremos mediante una estructura de condiciones y multiplicando el numero de hijos por el 20% del precio base, por cada hijo.
+
+7. Finalizando sumaremos el precio base mas cada uno de los recargos calculados tomando en cuenta  la edad del asegurado, si tiene conyugue y si tiene hijos despues de la suma de estos cargos solo si aplican mostrará el resultado de la cotizacion. 
+

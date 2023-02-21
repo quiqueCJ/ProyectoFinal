@@ -1,0 +1,75 @@
+Analisis de Proyecto final.
+
+Queremos hacer un programa para poder procesar cotizaciones de una manera hagil y rapida, en este caso la cotizacion esta diseñada unicamente para personas mayores a 18 años entonces los menores a 18 años no podrian ser eligibles para la aseguranza, hay un plan base el cual nos da un precio base, el cual nosotros le agregamos recargos dependiendo de la edad del asegurador, si el asegurador tiene de 18 a 24 años se le hace un recargo del 10% del precio base, si el asegurador es de 25 a 49 años, se  le hace un cargo del 20% del precio base, si el asegurador tiene 50 años o mas, se le hace un cargo del 30 del precio base, tambien hacemos un recargo  si el asegurador esta casado, y si tiene el recargo al conyugue  dependerá de la edad del conyugue, tambien se le hace un recargo al asegurador si tiene hijos o hijas del 20% si asi es. Entonces para tener el total tenemos que sumar el Cargo base más el resultado de las condiciones del asegurador que ingresa la informacion, dependiendo de sus caracteristicas la coticacion trabajaria de esta manera siguiente:
+
+Recargo Base = 2000
+Recargo 18 años = 0.10
+Recargo 25 años = 0.20
+Recargo 50 años = 0.30
+
+Recargo 18 años Casado = 200
+Recargo 25 años Casado = 400
+Recargo 50 años Casado = 500
+
+Recargo Hijos = 200
+
+Recargo Incluyendo Recargos = 0
+
+Nombre Asegurado = 
+Nombre Asegurado Casado = Juan
+edad del asegurador = 20
+Nombre del Conyugue = Maria
+Edad del Conyugue = 25
+
+Comparar SI Juan >= 18 && <= 24
+   Recargo base * 0.10  = 2200
+   2200 = Recargo Incluyendo Recargos
+Si Juan == Casado = SI
+   compare SI  Maria >= 18 && <= 24
+   Recargo base * 0.10
+   De Lo Contrario >= 25 && <= 49
+   Recargo Incluyendo Recargos + 400 = 2600
+   2600 = Recargo Incluyendo Recargos
+Si Juan == si hijos
+    Juan = Recargo Incluyendo Recargos + Recargo Hijos
+SI NO Hijos
+	Recargo Incluyendo Recargos = Con 2600 usted podria segurar y su Esposa = Recargo 	Incluyendo Recargos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+
